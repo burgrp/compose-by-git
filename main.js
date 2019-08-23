@@ -29,7 +29,7 @@ async function pullGit() {
 
 (async () => {
 
-    //await pullGit();
+    await pullGit();
 
     let remotes = await exec("git", "remote", "-v");
     let gitUrl = /origin\t(?<url>.*) /.exec(remotes).groups.url;
