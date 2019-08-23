@@ -1,0 +1,28 @@
+{
+  "name": "compose-by-git",
+  "version": "1.0.0",
+  "description": "Synchronize docker-compose with git by github webhooks",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burgrp/compose-by-git.git"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "docker-compose",
+    "cicd"
+  ],
+  "author": "Pavel Burgr <pb@drake.cz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burgrp/compose-by-git/issues"
+  },
+  "homepage": "https://github.com/burgrp/compose-by-git#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
