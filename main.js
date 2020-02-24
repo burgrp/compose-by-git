@@ -23,7 +23,7 @@ async function pullGit() {
     let pullResult = await exec("git", "pull");
     if (pullResult !== "Already up to date.") {
         info("Reloading docker-compose");
-        await exec("docker-compose", "up", "--remove-orphans", "-d");
+        await exec("docker-compose", "up", "--remove-orphans", "--detach", "--build");
     }
 }
 
