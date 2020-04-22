@@ -46,6 +46,7 @@ async function pullGit() {
     });
 
     let port = process.env.HTTP_PORT || 8080
+    info("Starting web hook listener on port", port);
     app.listen(port, () => info("Listening on port", port));
 
 })().catch(e =>
